@@ -11,7 +11,7 @@ datetime <- paste(data1$Date, data1$Time)
 #Converting datetime to class representing calendar dates and times("POSIXlt" and "POSIXct")
 data1$Datetime <- as.POSIXct(datetime)
 
-## Plot 2
+#Making plot 2
 with(data1, {plot(Global_active_power~Datetime, type="l",
        ylab="Global Active Power (kilowatts)", xlab="")})
 #Copying plot 2 to png
